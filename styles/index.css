@@ -1,0 +1,364 @@
+#title {
+  height: 100vh;
+  background-image: url("../images/title-img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-box-shadow: 0 3000px rgba(0, 0, 0, 0.808) inset;
+          box-shadow: 0 3000px rgba(0, 0, 0, 0.808) inset;
+}
+
+.name {
+  padding-top: 20vh;
+  text-align: center;
+}
+
+.name h1 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 7rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.position {
+  padding-bottom: 30px;
+}
+
+.position h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.links {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.links .git-link {
+  padding: 10px 15px;
+}
+
+.links .git-link button {
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+.links .git-link button :hover {
+  color: yellow;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.links .git-link p {
+  color: white;
+}
+
+.links .git-link i {
+  color: white;
+}
+
+.links .linkedin-link {
+  padding: 10px 15px;
+}
+
+.links .linkedin-link button {
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+.links .linkedin-link button :hover {
+  color: yellow;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.links .linkedin-link p {
+  color: white;
+}
+
+.links .linkedin-link i {
+  color: white;
+}
+
+.links .email-link {
+  padding: 10px 15px;
+}
+
+.links .email-link button {
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+.links .email-link button :hover {
+  color: yellow;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.links .email-link p {
+  color: white;
+}
+
+.links .email-link i {
+  color: white;
+}
+
+.links .resume-link {
+  padding: 10px 15px;
+}
+
+.links .resume-link button {
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+.links .resume-link button :hover {
+  color: yellow;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.links .resume-link p {
+  color: white;
+}
+
+.links .resume-link i {
+  color: white;
+}
+
+.about-me {
+  padding-bottom: 100px;
+  width: 75%;
+  margin: auto;
+}
+
+.about-me .text-container {
+  margin: 0 100px;
+}
+
+.about-me .text-container h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#projects {
+  padding-bottom: 5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+#projects h3 {
+  font-weight: bold;
+}
+
+#projects .projects-title {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#projects .projects-title .recent-project-title {
+  color: black;
+  font-size: 3rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+#projects .projects-title hr {
+  border: 1px solid black;
+  width: 75%;
+}
+
+#projects .project1, #projects .project2, #projects .project3, #projects .project4 {
+  padding-bottom: 40px;
+}
+
+#projects .card {
+  border: 2px solid black;
+}
+
+#projects img {
+  outline: 1px solid black;
+}
+
+#projects img:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+#footer {
+  height: 9rem;
+  background-color: #292828;
+  color: white;
+  padding-bottom: 30px;
+}
+
+#footer p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#footer .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .git-link {
+  padding: 10px 15px;
+  padding: 5px 10px;
+}
+
+#footer .git-link button {
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+#footer .git-link button :hover {
+  color: yellow;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#footer .git-link p {
+  color: white;
+}
+
+#footer .git-link i {
+  color: white;
+}
+
+#footer .linkedin-link {
+  padding: 10px 15px;
+  padding: 5px 10px;
+}
+
+#footer .linkedin-link button {
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+#footer .linkedin-link button :hover {
+  color: yellow;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#footer .linkedin-link p {
+  color: white;
+}
+
+#footer .linkedin-link i {
+  color: white;
+}
+
+#footer .email-link {
+  padding: 10px 15px;
+  padding: 5px 10px;
+}
+
+#footer .email-link button {
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+#footer .email-link button :hover {
+  color: yellow;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#footer .email-link p {
+  color: white;
+}
+
+#footer .email-link i {
+  color: white;
+}
+
+#footer .resume-link {
+  padding: 10px 15px;
+  padding: 5px 10px;
+}
+
+#footer .resume-link button {
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+#footer .resume-link button :hover {
+  color: yellow;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#footer .resume-link p {
+  color: white;
+}
+
+#footer .resume-link i {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
