@@ -21,6 +21,20 @@
   letter-spacing: 5px;
 }
 
+@media only screen and (max-width: 768px) {
+  .name h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .name h1 {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 20px;
+  }
+}
+
 .position {
   padding-bottom: 30px;
 }
@@ -33,6 +47,20 @@
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .position h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .position h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 20px;
+  }
+}
+
 .links {
   text-align: center;
   display: -webkit-box;
@@ -42,6 +70,25 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 2104px) and (max-width: 4000px) {
+  .links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0;
+  }
 }
 
 .links .git-link {
@@ -166,14 +213,33 @@
   margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .about-me {
+    width: 100%;
+  }
+}
+
 .about-me .text-container {
   margin: 0 100px;
+}
+
+@media only screen and (max-width: 429px) {
+  .about-me .text-container {
+    margin: 0 0;
+    padding: 0 20px;
+  }
 }
 
 .about-me .text-container h3 {
   text-align: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 429px) {
+  .about-me .text-container h3 {
+    text-align: left;
+  }
 }
 
 #projects {
@@ -219,6 +285,12 @@
 #projects img:hover {
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
+}
+
+@media only screen and (max-width: 768px) {
+  #projects .btn {
+    margin: 0 10px;
+  }
 }
 
 #footer {
