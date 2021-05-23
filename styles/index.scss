@@ -156,23 +156,38 @@ html {
   color: white;
   font-family: 'Montserrat', sans-serif;
 
-    @keyframes change-color {
-      0% {color: white;}
-      50% {color: yellow;}
-      100% {color: white;}
+    @keyframes down-to-up {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(10%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
     }
 
     button {
+      color: inherit;
       background: none;
-      border: none;
-      color: white;
-      animation-name: change-color;
-      animation-duration: 2s;
+      border: solid 3px white;
+      animation: ease-in-out;
+      animation-name: down-to-up;
+      animation-duration: 3s;
       animation-iteration-count: infinite;
+      font-size: 1.5rem;
+      padding: 20px 40px;
     }
 
-    .showProjects-btn {
+    .showProjects-link {
       color: inherit;
+
+        :hover {
+          color: yellow;
+        }
     }
 }
 

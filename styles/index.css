@@ -259,44 +259,58 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
-@-webkit-keyframes change-color {
+@-webkit-keyframes down-to-up {
   0% {
-    color: white;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50% {
-    color: yellow;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
   100% {
-    color: white;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes change-color {
+@keyframes down-to-up {
   0% {
-    color: white;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50% {
-    color: yellow;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
   100% {
-    color: white;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 .projects-prompt button {
+  color: inherit;
   background: none;
-  border: none;
-  color: white;
-  -webkit-animation-name: change-color;
-          animation-name: change-color;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  border: solid 3px white;
+  -webkit-animation: ease-in-out;
+          animation: ease-in-out;
+  -webkit-animation-name: down-to-up;
+          animation-name: down-to-up;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  font-size: 1.5rem;
+  padding: 20px 40px;
 }
 
-.projects-prompt .showProjects-btn {
+.projects-prompt .showProjects-link {
   color: inherit;
+}
+
+.projects-prompt .showProjects-link :hover {
+  color: yellow;
 }
 
 #projects {
