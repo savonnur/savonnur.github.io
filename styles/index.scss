@@ -31,7 +31,7 @@ html {
 
 // title section 
 #title {
-  height: 100vh;
+  height: 977px;
   background-image: url("../images/title-img.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -39,7 +39,7 @@ html {
   box-shadow: 0 3000px rgba(0, 0, 0, 0.808) inset;
 
   @media only screen and (max-width: 440px) {
-    height: 120vh;
+    height: 1172.4px;
   }
 }
 
@@ -224,9 +224,7 @@ html {
     }
 
     .btn {
-      @media only screen and (max-width: 768px) {
-        margin: 0 10px;
-      }
+      margin: 0 10px;
     }
   }
 
