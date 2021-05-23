@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #title {
   height: 100vh;
   background-image: url("../images/title-img.jpg");
@@ -6,6 +10,12 @@
   background-position: center;
   -webkit-box-shadow: 0 3000px rgba(0, 0, 0, 0.808) inset;
           box-shadow: 0 3000px rgba(0, 0, 0, 0.808) inset;
+}
+
+@media only screen and (max-width: 440px) {
+  #title {
+    height: 120vh;
+  }
 }
 
 .name {
@@ -27,7 +37,7 @@
   }
 }
 
-@media only screen and (max-width: 429px) {
+@media only screen and (max-width: 440px) {
   .name h1 {
     font-size: 3rem;
     text-align: left;
@@ -240,6 +250,53 @@
   .about-me .text-container h3 {
     text-align: left;
   }
+}
+
+.projects-prompt {
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@-webkit-keyframes change-color {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes change-color {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.projects-prompt button {
+  background: none;
+  border: none;
+  color: white;
+  -webkit-animation-name: change-color;
+          animation-name: change-color;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.projects-prompt .showProjects-btn {
+  color: inherit;
 }
 
 #projects {

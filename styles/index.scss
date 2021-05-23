@@ -24,6 +24,10 @@
 }
 //end of mixins
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 // title section 
 #title {
@@ -33,6 +37,10 @@
   background-attachment: fixed;
   background-position: center;
   box-shadow: 0 3000px rgba(0, 0, 0, 0.808) inset;
+
+  @media only screen and (max-width: 440px) {
+    height: 120vh;
+  }
 }
 
 .name {
@@ -50,7 +58,7 @@
         font-size: 4rem;
       }
 
-      @media only screen and (max-width: 429px) {
+      @media only screen and (max-width: 440px) {
         font-size: 3rem;
         text-align: left;
         padding: 0 20px;
@@ -140,6 +148,32 @@
         }
       }
   }
+}
+
+.projects-prompt {
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+    @keyframes change-color {
+      0% {color: white;}
+      50% {color: yellow;}
+      100% {color: white;}
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: white;
+      animation-name: change-color;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    .showProjects-btn {
+      color: inherit;
+    }
 }
 
 //END OF TITLE SECTION
